@@ -7,5 +7,10 @@ class User < ApplicationRecord
   has_one_attached :photo
 
   has_many :reservations
+
+  enum profile: {
+    admin: 0,
+    client: 1
+  }
 end
 
