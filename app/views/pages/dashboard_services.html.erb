@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-3 dash-board-container-left">
+      <%= render "./shared/sidebar" %>
+    </div>
+    <div class="col-sm-12 col-md-9 dash-board-container-right">
+      <div>
+        <%= link_to "Add a new service", new_service_path, class: "btn btn-info" %>
+      </div>
+      <% @services.each do |service| %>
+        <div class="service-item-container mt-3 mb-3 p-4">
+          <div class="flex d-flex justify-content-between">
+            <p><%= service.name %></p>
+            <p><%= service.price %></p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-2">
+              <img src="https://s2.glbimg.com/fTIkCN0nLjjtNipaFoNY8eqFGd0=/620x455/e.glbimg.com/og/ed/f/original/2018/12/31/champagne-1196112_1920.jpg">
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <p><%= service.description %></p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <button class="btn btn-primary w-100 mb-2">Edit</button>
+              <button class="btn btn-danger w-100">Delete</button>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render './shared/footer' %>

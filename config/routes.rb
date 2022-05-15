@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'dashboard', to: 'pages#dashboard'
   get 'dashboard_rooms', to: 'pages#dashboard_rooms'
+  get 'dashboard_services', to: 'pages#dashboard_services'
 
   resources :rooms
+  resources :services
 end

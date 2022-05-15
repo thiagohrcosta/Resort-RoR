@@ -11,4 +11,8 @@ class PagesController < ApplicationController
   def dashboard_rooms
     @rooms = Room.all
   end
+
+  def dashboard_services
+    @services = Service.all
+  end
 end
