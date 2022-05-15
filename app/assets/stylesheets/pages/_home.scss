@@ -73,6 +73,10 @@
   position: absolute;
   z-index: -1;
   margin-top: -100px;
+
+  .img-home-carousel  {
+    min-width: 100% !important;
+  }
 }
 
 .service-home {
@@ -84,7 +88,7 @@
     padding: 20px;
 
     img {
-      width: 100%;
+      width: 100% !important;
       height: 380px;
     }
 
