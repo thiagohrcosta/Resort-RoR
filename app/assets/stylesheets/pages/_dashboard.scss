@@ -16,7 +16,7 @@
 .dash-board-container-right {
   margin: 20px 0;
   overflow-y: auto;
-  height: 80vh;
+  max-height: 70vh;
 }
 
 .dashboard-room-container {
@@ -34,4 +34,12 @@
   background-color: var(--blue-900) !important;
   color: var(--white) !important;
   border-radius: 20px;
+}
+
+.service-item-container {
+  border: 1px solid var(--blue-900);
+
+  img {
+    width: 100%
+  }
 }

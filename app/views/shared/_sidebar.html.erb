@@ -1,13 +1,11 @@
- <div class="col-sm-12 col-md-3 dash-board-container-left">
-  <div class="dashboard-menu">
-    <p>Hi, <%= current_user.email %></p>
-    <ul>
-      <li>Reservations</li>
-      <hr>
-      <li><%= link_to "Rooms", dashboard_rooms_path %></li>
-      <li>Services</li>
-      <hr>
-      <li>Balance</li>
-    </ul>
-  </div>
+<div class="dashboard-menu">
+  <p>Hi, <%= current_user.email %></p>
+  <ul>
+    <li>Reservations</li>
+    <hr>
+    <li><%= link_to "Rooms", dashboard_rooms_path %></li>
+    <li><%= link_to "Services", dashboard_services_path %></li>
+    <hr>
+    <li>Balance</li>
+  </ul>
 </div>

@@ -1,0 +1,18 @@
+<%= simple_form_for(service) do |f| %>
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <%= f.input :name %>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <%= f.input :quantity %>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <%= f.input :price %>
+    </div>
+  </div>
+  <%= f.input :description, as: :text, :input_html => { :cols => 5, :rows => 8 } %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true }, label: false, class: "btn btn-secondary" %>
+
+  <%= f.submit 'Create', class: "btn btn-create" %>
+
+<% end %>

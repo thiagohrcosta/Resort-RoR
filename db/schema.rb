@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2022_05_15_163412) do
   end
 
   create_table "services", force: :cascade do |t|
+    t.string "name"
     t.decimal "price"
     t.integer "quantity"
     t.string "description"
