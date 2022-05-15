@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2022_05_15_163412) do
   end
 
   create_table "rooms", force: :cascade do |t|
+    t.string "name"
     t.integer "quantity"
     t.integer "bed"
     t.integer "bathroom"
