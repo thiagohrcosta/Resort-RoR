@@ -1,14 +1,19 @@
 .dash-board-container-left {
   margin: 20px 0;
   border: 1px solid var(--blue-900);
+  max-height: 50vh;
 }
 
 .dashboard-menu {
-  padding: 20px;
+  padding: 20px 0;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
 }
 
 .dash-board-container-right {
-  min-height: 70vh;
   margin: 20px 0;
 }
 
@@ -20,4 +25,11 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.btn-create {
+  width: 100%;
+  background-color: var(--blue-900) !important;
+  color: var(--white) !important;
+  border-radius: 20px;
 }

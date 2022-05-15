@@ -1,0 +1,22 @@
+<%= simple_form_for(room) do |f| %>
+  <%= f.input :name %>
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <%= f.input :quantity %>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <%= f.input :bed %>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <%= f.input :bathroom %>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <%= f.input :price %>
+    </div>
+  </div>
+  <%= f.input :description, as: :text, :input_html => { :cols => 5, :rows => 8 } %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true }, label: false, class: "btn btn-secondary" %>
+
+  <%= f.submit 'Create', class: "btn btn-create" %>
+
+<% end %>
