@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+:root {
+  --white: #ffffff;
+
+  --blue-100: #A6E1FA;
+  --blue-200: #0E6BA8;
+  --blue-300: #0A2472;
+  --blue-500: #001C55;
+  --blue-900: #00072D;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Roboto Serif', serif;
+}

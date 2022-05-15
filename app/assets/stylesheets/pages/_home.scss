@@ -1,1 +1,132 @@
 // Specific CSS for your home-page
+
+.home-banner {
+  background-image:  linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://res.cloudinary.com/dloadb2bx/image/upload/v1652584648/photo-1645682490833-3cadfb27f158_ucunlm.avif");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .banner-content {
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+  }
+
+  .banner-header {
+    h1 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-weight: 100;
+    }
+  }
+
+  .banner-footer {
+    font-size: 1.5rem;
+  }
+}
+
+.book-now {
+  width: 50%;
+  margin: -20px auto 0;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  .book-item {
+    background-color: var(--white);
+    padding: 20px;
+    font-size: 1rem;
+
+    input {
+      width: 100%;
+    }
+
+  }
+
+  .book-now-item {
+    background-color: var(--blue-900);
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about-us {
+  padding: 30px;
+  background-color: var(--white);
+  z-index: 1;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-home {
+  position: absolute;
+  z-index: -1;
+  margin-top: -100px;
+}
+
+.service-home {
+  z-index: 1;
+  margin-top: 550px;
+
+  .service-home-container {
+    background-color: var(--white);
+    padding: 20px;
+
+    img {
+      width: 100%;
+      height: 380px;
+    }
+
+  }
+}
+
+.contact-us {
+  background-image:  linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-us-container {
+  width: 200px;
+  background-color: var(--white);
+  margin: 0 auto;
+  height: 400px;
+  line-height: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  text-align: center;
+}
+
+.footer {
+  padding: 50px 0;
+  color: var(--white);
+  background-color: var(--blue-900);
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
