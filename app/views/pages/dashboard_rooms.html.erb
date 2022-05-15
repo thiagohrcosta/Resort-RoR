@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-3 dash-board-container-left">
+      <div class="dashboard-menu">
+        <p>Hi, <%= current_user.email %></p>
+        <ul>
+          <li>Reservations</li>
+          <hr>
+          <li><%= link_to "Rooms", dashboard_rooms_path %></li>
+          <li>Services</li>
+          <hr>
+          <li>Balance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-9 dash-board-container-right">
+      <div>
+        <button class="btn btn-info mb-4">Add new Room</button>
+      </div>
+      <% @rooms.each do |room| %>
+        <div class="dashboard-room-container">
+          <div class="row">
+            <div class="col-sm-12 col-md-11">
+              <p><%= room.name %></p>
+            </div>
+            <div class="col-sm-12 col-md-1">
+              <p>ID: <%= room.id %>
+            </div>
+          </div>
+          <div class="mt-4 mb-4">
+            <p><%= room.description %></p>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <img class="w-100" src="https://images.unsplash.com/photo-1540202404-a2f29016b523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80">
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="dash-room-item-info">
+                <p>Price:</p>
+                <p><%= room.price %></p>
+              </div>
+              <div class="dash-room-item-info">
+                <p>Quantity:</p>
+                <p><%= room.quantity %></p>
+              </div>
+              <div class="dash-room-item-info">
+                <p>Bedroom:</p>
+                <p><%= room.bed %></p>
+              </div>
+              <div class="dash-room-item-info">
+                <p>Bathroom:</p>
+                <p><%= room.bathroom %></p>
+              </div>
+              <div class="dash-room-item-info">
+                <button class="btn btn-primary w-100">Edit</button>
+                <button class="btn btn-danger ml-2">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render './shared/footer' %>

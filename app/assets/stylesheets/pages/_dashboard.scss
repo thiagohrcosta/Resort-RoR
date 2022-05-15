@@ -6,3 +6,18 @@
 .dashboard-menu {
   padding: 20px;
 }
+
+.dash-board-container-right {
+  min-height: 70vh;
+  margin: 20px 0;
+}
+
+.dashboard-room-container {
+  border: 1px solid var(--blue-900);
+  padding: 20px;
+
+  .dash-room-item-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
