@@ -54,11 +54,16 @@
     background-color: var(--blue-900);
     color: var(--white);
     font-weight: 700;
-    text-align: center;
-    height: 120px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+
+    p {
+      margin: 0 !important;
+    }
+
   }
 }
 
