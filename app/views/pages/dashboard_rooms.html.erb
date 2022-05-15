@@ -15,10 +15,10 @@
     </div>
     <div class="col-sm-12 col-md-9 dash-board-container-right">
       <div>
-        <button class="btn btn-info mb-4">Add new Room</button>
+        <%= link_to "Add a new room", new_room_path, class: "btn btn-info" %>
       </div>
       <% @rooms.each do |room| %>
-        <div class="dashboard-room-container">
+        <div class="dashboard-room-container mt-4 mb-4">
           <div class="row">
             <div class="col-sm-12 col-md-11">
               <p><%= room.name %></p>
