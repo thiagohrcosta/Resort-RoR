@@ -45,11 +45,11 @@ ActiveRecord::Schema.define(version: 2022_05_15_163412) do
 
   create_table "reservations", force: :cascade do |t|
     t.bigint "room_id", null: false
-    t.bigint "service_id", null: false
+    t.bigint "service_id"
     t.bigint "user_id", null: false
     t.decimal "final_price"
-    t.datetime "start_date"
-    t.datetime "end_date"
+    t.datetime "check_in"
+    t.datetime "check_out"
     t.integer "adults"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
